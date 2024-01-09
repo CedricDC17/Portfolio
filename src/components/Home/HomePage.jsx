@@ -28,7 +28,7 @@ function HomePage() {
                     </p>
                 </div>
                 <div className={styles.cta}>
-                    <Button component={Link} to="/contact" variant="contained" className={styles.button}>
+                    <Button component={Link} to="/portfolio/contact" variant="contained" className={styles.button}>
                         Contactez-moi
                     </Button>
 
@@ -79,7 +79,7 @@ function HomePage() {
                                     <Typography className={styles.cardTitle} sx={{ fontSize: 28, fontWeight: 600 }} color="text.secondary" gutterBottom>
                                         {work.title}
                                     </Typography>
-                                    <a href={`/work/${work.id}`}>
+                                    <a href={`/portfolio/work/${work.id}`}>
                                         <CardMedia
                                             component="img"
                                             height="200"
@@ -98,7 +98,7 @@ function HomePage() {
                                     </ul>
                                 </CardContent>
                                 <CardActions className={styles.cardAction}>
-                                    <Button className={styles.button} size="small" component={Link} to={`/work/${work.id}`}><FontAwesomeIcon className={styles.buttonIcon} icon={faFile} /></Button>
+                                    <Button className={styles.button} size="small" component={Link} to={`/portfolio/work/${work.id}`}><FontAwesomeIcon className={styles.buttonIcon} icon={faFile} /></Button>
                                 </CardActions>
                             </Card>
                         ))}
@@ -109,7 +109,7 @@ function HomePage() {
             <section className={styles.contact}>
                 <h2>Contactez-moi</h2>
                 <p>Vous avez un projet et vous souhaitez travailler avec moi? N'hésitez pas à me contacter!</p>
-                <Button component={Link} to="/contact" variant="contained" className={styles.button}>
+                <Button component={Link} to="/portfolio/contact" variant="contained" className={styles.button}>
                     Contactez-moi
                 </Button>
             </section>

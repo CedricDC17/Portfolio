@@ -16,7 +16,7 @@ function Header() {
                 <Button color="inherit" component={Link} to="/portfolio/">
                     Home
                 </Button>
-                <Button color="inherit" component={Link} to="/contact">
+                <Button color="inherit" component={Link} to="/portfolio/contact">
                     Contact
                 </Button>
             </Toolbar>
