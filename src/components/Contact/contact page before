@@ -1,0 +1,73 @@
+// import React, { useState } from 'react';
+// import { Button, TextField, Grid, Paper } from '@mui/material';
+// import styles from './ContactPage.module.scss';
+
+// const ContactPage = () => {
+//   // État pour stocker les informations de contact
+//   const [contactInfo, setContactInfo] = useState({
+//     name: '',
+//     email: '',
+//     message: ''
+//   });
+
+//   // Gère la soumission du formulaire
+//   const handleSubmit = async (event) => {
+//     console.log("handleSubmit called");
+
+//     event.preventDefault();
+
+//     // TODO: Ici, vous pouvez configurer l'envoi de données à une API ou un serveur.
+//     // Par exemple, vous pourriez utiliser fetch ou axios pour envoyer les données.
+
+//     console.log('Les informations de contact soumises sont :', contactInfo);
+
+//     // Réinitialiser le formulaire après la soumission
+//     setContactInfo({ name: '', email: '', message: '' });
+
+//     // Vous pouvez afficher un message de réussite ou traiter la réponse ici.
+//   };
+
+//   return (
+//     <div className={styles.main}>
+//       <h1>Envoyez moi un message !</h1>
+//       <div className={styles.container}>
+//         <Grid container spacing={2}>
+//           <Grid item xs={12}>
+//             <Paper style={{ padding: 16 }}>
+//               <form onSubmit={handleSubmit}>
+//                 <TextField
+//                   label="Nom"
+//                   fullWidth
+//                   margin="normal"
+//                   value={contactInfo.name}
+//                   onChange={(e) => setContactInfo({ ...contactInfo, name: e.target.value })}
+//                 />
+//                 <TextField
+//                   label="Email"
+//                   fullWidth
+//                   margin="normal"
+//                   value={contactInfo.email}
+//                   onChange={(e) => setContactInfo({ ...contactInfo, email: e.target.value })}
+//                 />
+//                 <TextField
+//                   label="Message"
+//                   fullWidth
+//                   margin="normal"
+//                   multiline
+//                   rows={4}
+//                   value={contactInfo.message}
+//                   onChange={(e) => setContactInfo({ ...contactInfo, message: e.target.value })}
+//                 />
+//                 <Button id={styles.button} type="submit" variant="contained" color="primary">
+//                   Envoyer
+//                 </Button>
+//               </form>
+//             </Paper>
+//           </Grid>
+//         </Grid>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ContactPage;
