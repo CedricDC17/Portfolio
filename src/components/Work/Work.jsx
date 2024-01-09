@@ -13,7 +13,7 @@ function Work() {
     }, []);
 
     return (
-        <main className={styles.workPage}>
+        <div className={styles.workPage}>
             <h1>{work.title}</h1>
             <img src={work.cover} alt={work.title} />
             <ul className={styles.tags}>
@@ -35,10 +35,10 @@ function Work() {
             <p>{work.problématique}</p>
             <h4>En détails</h4>
             <p>{work.details}</p>
-            <Link className={styles.backToPortfolio} to={"/"}>
+            <Link className={styles.backToPortfolio} to={"/portfolio/"}>
                 <button>Retour au portfolio</button>
             </Link>
-        </main>
+        </div>
     );
 }
 

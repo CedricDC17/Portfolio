@@ -79,7 +79,7 @@ function HomePage() {
                                     <Typography className={styles.cardTitle} sx={{ fontSize: 28, fontWeight: 600 }} color="text.secondary" gutterBottom>
                                         {work.title}
                                     </Typography>
-                                    <a href={`/portfolio/work/${work.id}`}>
+                                    <Link to={`/portfolio/work/${work.id}`}>
                                         <CardMedia
                                             component="img"
                                             height="200"
@@ -87,7 +87,7 @@ function HomePage() {
                                             className={styles.cardImg}
                                             alt={`Image de ${work.title}`}
                                         />
-                                    </a>
+                                    </Link>
                                     <Typography variant="body2">
                                         {work.description}
                                     </Typography>
