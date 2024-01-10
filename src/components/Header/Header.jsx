@@ -11,7 +11,9 @@ function Header() {
         <AppBar className={styles.header} position="fixed">
             <Toolbar>
                 <Typography variant="h6" style={{ flexGrow: 1 }}>
+                <Link className={styles.logo} to={`/portfolio/`}>
                     Cédric
+                </Link>
                 </Typography>
                 <Button color="inherit" component={Link} to="/portfolio/">
                     Home

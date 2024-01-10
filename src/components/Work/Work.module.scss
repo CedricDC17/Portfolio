@@ -11,6 +11,14 @@ main {
 .workPage {
     color: var(--lightgrey);
     margin: 0 5% 15vh;
+
+    div{
+        text-align: center;
+    }
+}
+
+.cover{
+    max-width: 80vh;
 }
 
 .workPage .tags {

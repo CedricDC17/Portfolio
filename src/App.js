@@ -14,10 +14,8 @@ function App() {
           <Route path="/portfolio/" element={<HomePage />} />
           <Route path="/portfolio/contact" element={<ContactPage />} />
           <Route path="/portfolio/work/:id" element={<Work datas={works}/>} />
-          
         </Routes>
       </Router>
-
   );
 }
 

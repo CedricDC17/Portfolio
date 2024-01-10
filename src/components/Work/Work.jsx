@@ -15,7 +15,9 @@ function Work() {
     return (
         <div className={styles.workPage}>
             <h1>{work.title}</h1>
-            <img src={work.cover} alt={work.title} />
+            <div>
+            <img className={styles.cover} src={work.cover} alt={work.title} />
+            </div>
             <ul className={styles.tags}>
                 {work.tags.map((tags, index) => (
                     <li key={index}>{tags}</li>
