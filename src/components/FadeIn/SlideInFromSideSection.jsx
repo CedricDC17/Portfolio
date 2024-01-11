@@ -8,8 +8,12 @@ const SlideInFromSideSection = (props) => {
     useEffect(() => {
         const currentRef = domRef.current;
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible(entry.isIntersecting));
-        });
+            entries.forEach(entry => {
+                if (!isVisible && entry.isIntersecting) {
+                    setVisible(true);
+                }
+            });
+        }, { threshold: 0.1 }); 
 
         if (currentRef) {
             observer.observe(currentRef);
@@ -20,7 +24,7 @@ const SlideInFromSideSection = (props) => {
                 observer.unobserve(currentRef);
             }
         };
-    }, []);
+    }, [isVisible]); 
 
     return (
         <div
