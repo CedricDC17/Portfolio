@@ -1,0 +1,10 @@
+.slideInFromSideSection {
+    transform: translateX(100px); 
+    transition: transform 3s ease-out;
+
+  }
+  
+  .isVisible {
+    transform: translateX(0px); 
+  }
+  
