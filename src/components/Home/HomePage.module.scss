@@ -45,6 +45,16 @@
   }
 }
 
+.alignRight {
+  text-align: right;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
 .cta {
   display: flex;
   justify-content: flex-end;
@@ -69,24 +79,6 @@
     }
   }
 
-}
-
-.alignRight {
-  text-align: right;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding-top: 20px;
-}
-
-ul {
-  padding: 0%;
-}
-
-li {
-  list-style: none;
 }
 
 .about {
@@ -127,6 +119,14 @@ li {
   display: flex;
   justify-content: space-around;
   text-align: center;
+}
+
+ul {
+  padding: 0%;
+}
+
+li {
+  list-style: none;
 }
 
 .tags {
@@ -228,7 +228,7 @@ li {
 
 }
 
-.card .background{
+.card .background {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
