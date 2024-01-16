@@ -1,28 +1,22 @@
-main {
+.workPage main {
     max-width: 950px;
     margin: 0 auto;
 }
 
-*::selection {
-    background-color: var(--blue);
-    color: var(--backgroundColor);
-}
 
 .workPage {
-    color: var(--lightgrey);
-    margin: 0 5% 15vh;
+    margin: 0 5% 5vh;
 
-    div{
+    div {
         text-align: center;
     }
 }
 
-.cover{
+.workPage .cover {
     max-width: 80vh;
 }
 
 .workPage .tags {
-    color: var(--blue);
     margin-top: 1rem;
     display: flex;
     gap: 9px;
@@ -49,7 +43,6 @@ main {
 .workPage a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--blue);
     font-weight: 500;
     font-size: 18px;
 }
@@ -59,47 +52,38 @@ main {
     font-size: clamp(36px, 8vw, 70px);
     font-weight: 600;
     text-align: center;
+
+    @media (max-width: 768px) {
+        padding-top: 5vh;
+    }
 }
 
 .workPage img {
-    margin-top: 10vh;
     width: 100%;
     height: auto;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .workPage h2,
 .workPage h3,
 .workPage h4 {
     font-size: clamp(25px, 4vw, 50px);
-    margin-top: 10vh;
+    margin-top: 1rem;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
-.workPage p {
+p {
     font-size: 16px;
     margin-top: 1rem;
     line-height: 1.7;
-}
 
-.backToPortfolio button {
-    margin-top: 3rem;
-    cursor: pointer;
-
-    background: var(--blue);
-    color: var(--backgroundColor);
-    padding: 0.5rem 1.6rem;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: var(--mainFont);
-    border-radius: 4px;
-    transition: 0.3s;
-    border: var(--blue) solid 2px;
-}
-
-.backToPortfolio button:hover {
-    background: var(--backgroundColor);
-    color: var(--blue);
+    @media (max-width: 768px) {
+        font-size: 0.8rem;
+    }
 }
 
 .linkWork {
@@ -118,14 +102,72 @@ main {
     content: "";
     position: absolute;
     bottom: 0;
-    left: p0;
+    left: 0;
     width: 0%;
     height: 1px;
-    background-color: var(--blue);
     transition: width 0.5s ease;
     transform-origin: left;
 }
 
 .linkWork:hover:before {
     width: 100%;
+}
+
+.workInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    width: 50%;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    @media (max-width: 768px) {
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+.button.button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #5f5c58;
+    background-color: #EEE7DA;
+
+    &:hover {
+        background-color: #88AB8E;
+    }
+
+
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F1EB;
+    border: 2px solid #88AB8E;
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    p {
+        padding: 25px;
+    }
 }

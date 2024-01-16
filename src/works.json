@@ -1,6 +1,6 @@
 [
     {
-        "id": "c67a30a7",
+        "id": "kasa",
         "title": "Kasa",
         "cover": "https://www.zupimages.net/up/24/02/u77c.png",
         "description": "Création d'une application web de location immobilière avec React...",
@@ -14,6 +14,23 @@
         ],
         "github": "https://github.com/CedricDC17/my-app",
         "site": "https://cedricdc17.github.io/my-app/"
+    },
+    {
+        "id": "Beninfo",
+        "title": "Ben-info.com",
+        "cover": "https://zupimages.net/up/24/03/r1tt.png",
+        "description": "Création d'un site vitrine pour une entreprise de réparation d'appareils électronique...",
+        "contexte": "Ben-info.com, jusqu'alors absente sur le web, avait besoin d'une présence digitale pour mieux représenter ses services. Mon rôle fut de transposer leur expertise en un site web attrayant et informatif. Le principal défi résidait dans ma relative inexpérience dans la création de sites web complets à ce moment-là, nécessitant un apprentissage rapide et efficace des technologies et pratiques du web design.",
+        "problématique": "Pour répondre à ce défi, j'ai embrassé l'opportunité d'apprendre et d'expérimenter. En collaboration étroite avec un des employés, j'ai imaginé et conçu le design du site, veillant à ce qu'il reflète fidèlement l'identité et les valeurs de Ben-info.",
+        "details": "J'ai codé le site en HTML/CSS en utilisant Bootstrap pour les styles et j'ai utilisé formsubmit.co pour rediriger les données saisies dans les formulaires vers l'adresse mail de la compagnie.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "formsubmit.co"
+            
+        ],
+        "site": "https://ben-info.com/"
     },
     {
         "id": "c67ab821",
