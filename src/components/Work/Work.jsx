@@ -39,21 +39,24 @@ function Work() {
             </div>
 
             <FadeInSection>
-                <div className={styles.block}>
-                    <h2>Contexte</h2>
-                    <p>{work.contexte}</p>
-                </div>
-                <div className={styles.block}>
-                    <h3>Problématique/Résolution</h3>
-                    <p>{work.problématique}</p>
-                </div>
-                <div className={styles.block}>
-                    <h4>En détails</h4>
-                    <p>{work.details}</p>
+                <div className={styles.blockSection}>
+
+                    <div className={styles.block}>
+                        <h2>Contexte</h2>
+                        <p>{work.contexte}</p>
+                    </div>
+                    <div className={styles.block}>
+                        <h3>Problématique/Résolution</h3>
+                        <p>{work.problématique}</p>
+                    </div>
+                    <div className={styles.block}>
+                        <h4>En détails</h4>
+                        <p>{work.details}</p>
+                    </div>
                 </div>
             </FadeInSection>
 
-            <FadeInSection delay={1.5}>
+            <FadeInSection delay={1}>
                 <Link className={styles.backToPortfolio} to={"/portfolio/"}>
                     <Button className={styles.button}>Retour au portfolio</Button>
                 </Link>

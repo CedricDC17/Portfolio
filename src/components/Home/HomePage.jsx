@@ -88,9 +88,9 @@ function HomePage() {
                                     <div className={styles.background}>
 
                                         <CardContent sx={{ paddingBottom: 0 }}>
-                                            <Typography className={styles.cardTitle} sx={{ fontSize: 28, fontWeight: 600 }} color="text.secondary" gutterBottom>
+                                            <h2 className={styles.cardTitle} sx={{ fontSize: 28, fontWeight: 600 }} color="text.secondary" >
                                                 {work.title}
-                                            </Typography>
+                                            </h2>
                                             <Link to={`/portfolio/work/${work.id}`}>
                                                 <CardMedia
                                                     component="img"
@@ -110,7 +110,7 @@ function HomePage() {
                                             </ul>
                                         </CardContent>
                                         <CardActions className={styles.cardAction}>
-                                            <Button className={styles.button} size="small" component={Link} to={`/portfolio/work/${work.id}`}><FontAwesomeIcon className={styles.buttonIcon} icon={faFile} /></Button>
+                                            <Button className={styles.button} size="small" component={Link} to={`/portfolio/work/${work.id}`}> <FontAwesomeIcon className={styles.buttonIcon} icon={faFile} /> </Button>
                                         </CardActions>
                                     </div>
                                 </Card>

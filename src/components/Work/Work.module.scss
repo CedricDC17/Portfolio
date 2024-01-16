@@ -48,7 +48,7 @@
 }
 
 .workPage h1 {
-    padding-top: 25vh;
+    padding-top: 15vh;
     font-size: clamp(36px, 8vw, 70px);
     font-weight: 600;
     text-align: center;
@@ -67,7 +67,7 @@
 .workPage h2,
 .workPage h3,
 .workPage h4 {
-    font-size: clamp(25px, 4vw, 50px);
+    font-size: 1.8rem;
     margin-top: 1rem;
     font-weight: 600;
 
@@ -76,9 +76,9 @@
     }
 }
 
-p {
-    font-size: 16px;
-    margin-top: 1rem;
+.workPage p {
+    font-size: 14px;
+    margin: 0;
     line-height: 1.7;
 
     @media (max-width: 768px) {
@@ -163,11 +163,23 @@ p {
     background-color: #F2F1EB;
     border: 2px solid #88AB8E;
     border-radius: 15px;
-    text-align: center;
+    text-align: left;
     padding-bottom: 25px;
     margin-bottom: 25px;
 
     p {
         padding: 25px;
     }
+
+    @media (min-width: 769px){
+        width: 60%;
+    }
+}
+
+.blockSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
